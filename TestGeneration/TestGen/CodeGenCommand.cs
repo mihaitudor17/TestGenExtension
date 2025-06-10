@@ -76,30 +76,9 @@ namespace TestGen
             string assemblyDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
             string scriptPath;
 
-            if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
-                scriptPath = Path.Combine(assemblyDir, "model-server", "mac-os","dist", "server", "server");
-            else
-                scriptPath = Path.Combine(assemblyDir, "model-server", "dist", "server", "server.exe");
+            scriptPath = Path.Combine(assemblyDir, "model-server", "dist", "server", "server.exe");
             
             scriptPath = Path.GetFullPath(scriptPath);
-
-            if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
-            {
-                System.Diagnostics.Process chmod = new System.Diagnostics.Process
-                {
-                    StartInfo = new ProcessStartInfo
-                    {
-                        FileName = "chmod",
-                        Arguments = $"+x \"{scriptPath}\"",
-                        UseShellExecute = false,
-                        RedirectStandardOutput = true,
-                        RedirectStandardError = true,
-                        CreateNoWindow = true
-                    }
-                };
-                chmod.Start();
-                chmod.WaitForExit();
-            }
 
             var psi = new ProcessStartInfo
             {
