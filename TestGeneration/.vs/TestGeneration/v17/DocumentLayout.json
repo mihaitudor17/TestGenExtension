@@ -5,6 +5,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|c:\\github\\testgenextension\\testgeneration\\testgen\\codegencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|solutionrelative:testgen\\codegencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|c:\\github\\testgenextension\\testgeneration\\testgen\\outputwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|solutionrelative:testgen\\outputwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|c:\\github\\testgenextension\\testgeneration\\testgen\\outputwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|solutionrelative:testgen\\outputwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OutputWindow.xaml",
+              "DocumentMoniker": "C:\\Github\\TestGenExtension\\TestGeneration\\TestGen\\OutputWindow.xaml",
+              "RelativeDocumentMoniker": "TestGen\\OutputWindow.xaml",
+              "ToolTip": "C:\\Github\\TestGenExtension\\TestGeneration\\TestGen\\OutputWindow.xaml",
+              "RelativeToolTip": "TestGen\\OutputWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-10T05:30:26.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OutputWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Github\\TestGenExtension\\TestGeneration\\TestGen\\OutputWindow.xaml.cs",
+              "RelativeDocumentMoniker": "TestGen\\OutputWindow.xaml.cs",
+              "ToolTip": "C:\\Github\\TestGenExtension\\TestGeneration\\TestGen\\OutputWindow.xaml.cs",
+              "RelativeToolTip": "TestGen\\OutputWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:22:07.346Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +57,7 @@
               "RelativeDocumentMoniker": "TestGen\\CodeGenCommand.cs",
               "ToolTip": "C:\\Github\\TestGenExtension\\TestGeneration\\TestGen\\CodeGenCommand.cs",
               "RelativeToolTip": "TestGen\\CodeGenCommand.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwFEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAkwK4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-10T04:52:24.99Z",
               "EditorCaption": ""

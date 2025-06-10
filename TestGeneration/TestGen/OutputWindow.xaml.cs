@@ -1,13 +1,21 @@
-﻿using System.Windows;
+﻿using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp;
+using System.Windows;
 
 namespace TestGen
 {
     public partial class OutputWindow : Window
     {
-        public OutputWindow(string text)
+        public OutputWindow(string rawCode)
         {
             InitializeComponent();
-            OutputTextBox.Text = text;
+
+            var formattedCode = SyntaxFactory
+                .ParseCompilationUnit(rawCode)
+                .NormalizeWhitespace()
+                .ToFullString();
+
+            OutputTextBox.Text = formattedCode;
         }
 
         private void CopyButton_Click(object sender, RoutedEventArgs e)
