@@ -1,6 +1,10 @@
 bin/
 obj/
-/packages/
+packages/
 riderModule.iml
-/_ReSharper.Caches/
-best_model/
+_ReSharper.Caches/
+TestGen/model-server/dist/
+TestGen/model-server/build/
+TestGen/model-server/best_model/
+.vs/
+*.vsidx

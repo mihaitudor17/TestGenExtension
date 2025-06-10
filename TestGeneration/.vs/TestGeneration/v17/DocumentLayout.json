@@ -1,13 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\blaga\\Desktop\\TestGeneration\\",
+  "WorkspaceRootPath": "C:\\Github\\TestGenExtension\\TestGeneration\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|c:\\users\\blaga\\desktop\\testgeneration\\testgen\\model-server\\server.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|solutionrelative:testgen\\model-server\\server.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|c:\\users\\blaga\\desktop\\testgeneration\\testgen\\codegencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|c:\\github\\testgenextension\\testgeneration\\testgen\\codegencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|solutionrelative:testgen\\codegencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -23,27 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "server.py",
-              "DocumentMoniker": "C:\\Users\\blaga\\Desktop\\TestGeneration\\TestGen\\model-server\\server.py",
-              "RelativeDocumentMoniker": "TestGen\\model-server\\server.py",
-              "ToolTip": "C:\\Users\\blaga\\Desktop\\TestGeneration\\TestGen\\model-server\\server.py",
-              "RelativeToolTip": "TestGen\\model-server\\server.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-10T01:12:43.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "CodeGenCommand.cs",
-              "DocumentMoniker": "C:\\Users\\blaga\\Desktop\\TestGeneration\\TestGen\\CodeGenCommand.cs",
+              "DocumentMoniker": "C:\\Github\\TestGenExtension\\TestGeneration\\TestGen\\CodeGenCommand.cs",
               "RelativeDocumentMoniker": "TestGen\\CodeGenCommand.cs",
-              "ToolTip": "C:\\Users\\blaga\\Desktop\\TestGeneration\\TestGen\\CodeGenCommand.cs",
+              "ToolTip": "C:\\Github\\TestGenExtension\\TestGeneration\\TestGen\\CodeGenCommand.cs",
               "RelativeToolTip": "TestGen\\CodeGenCommand.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwCEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAApwEsAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T01:10:03.014Z",
+              "WhenOpened": "2025-06-10T03:30:36.136Z",
               "EditorCaption": ""
             }
           ]

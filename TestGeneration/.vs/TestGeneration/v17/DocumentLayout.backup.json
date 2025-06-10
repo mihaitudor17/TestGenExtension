@@ -1,37 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\blaga\\Desktop\\TestGeneration\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|c:\\users\\blaga\\desktop\\testgeneration\\testgen\\codegencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C107C38-2D3B-4236-B620-F8C86E47230A}|TestGen\\TestGen.csproj|solutionrelative:testgen\\codegencommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Github\\TestGenExtension\\TestGeneration\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CodeGenCommand.cs",
-              "DocumentMoniker": "C:\\Users\\blaga\\Desktop\\TestGeneration\\TestGen\\CodeGenCommand.cs",
-              "RelativeDocumentMoniker": "TestGen\\CodeGenCommand.cs",
-              "ToolTip": "C:\\Users\\blaga\\Desktop\\TestGeneration\\TestGen\\CodeGenCommand.cs",
-              "RelativeToolTip": "TestGen\\CodeGenCommand.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwBAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T01:10:03.014Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

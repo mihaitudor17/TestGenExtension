@@ -6,6 +6,10 @@
 import os
 import subprocess
 import sys
+import fastapi
+import uvicorn
+import transformers
+import torch
 
 def install_packages():
     try:

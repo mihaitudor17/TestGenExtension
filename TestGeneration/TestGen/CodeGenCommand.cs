@@ -73,13 +73,12 @@ namespace TestGen
         private void StartServer()
         {
             string assemblyDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string scriptPath = Path.Combine(assemblyDir, "model-server", "server.py");
+            string scriptPath = Path.Combine(assemblyDir, "model-server", "dist", "server", "server.exe");
             scriptPath = Path.GetFullPath(scriptPath);
 
             var psi = new ProcessStartInfo
             {
-                FileName = "python",
-                Arguments = $"\"{scriptPath}\"",
+                FileName = scriptPath,
                 UseShellExecute = false,
                 RedirectStandardOutput = true,
                 RedirectStandardError = true,
@@ -174,13 +173,10 @@ namespace TestGen
             {
                 string result = await GenerateFromModelAsync(selectedText);
 
-                VsShellUtilities.ShowMessageBox(
-                    this.package,
-                    result,
-                    "Generated Output",
-                    OLEMSGICON.OLEMSGICON_INFO,
-                    OLEMSGBUTTON.OLEMSGBUTTON_OK,
-                    OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST);
+                await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+                var window = new OutputWindow(result);
+                window.ShowDialog();
+
             }
             catch (Exception ex)
             {
