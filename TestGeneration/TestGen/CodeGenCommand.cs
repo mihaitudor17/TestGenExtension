@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.IO;
 using System.Net.Http;
 using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -73,8 +74,32 @@ namespace TestGen
         private void StartServer()
         {
             string assemblyDir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            string scriptPath = Path.Combine(assemblyDir, "model-server", "dist", "server", "server.exe");
+            string scriptPath;
+
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
+                scriptPath = Path.Combine(assemblyDir, "model-server", "mac-os","dist", "server", "server");
+            else
+                scriptPath = Path.Combine(assemblyDir, "model-server", "dist", "server", "server.exe");
+            
             scriptPath = Path.GetFullPath(scriptPath);
+
+            if (!RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                System.Diagnostics.Process chmod = new System.Diagnostics.Process
+                {
+                    StartInfo = new ProcessStartInfo
+                    {
+                        FileName = "chmod",
+                        Arguments = $"+x \"{scriptPath}\"",
+                        UseShellExecute = false,
+                        RedirectStandardOutput = true,
+                        RedirectStandardError = true,
+                        CreateNoWindow = true
+                    }
+                };
+                chmod.Start();
+                chmod.WaitForExit();
+            }
 
             var psi = new ProcessStartInfo
             {
@@ -87,7 +112,7 @@ namespace TestGen
 
             serverProcess = System.Diagnostics.Process.Start(psi);
 
-            const int timeoutMilliseconds = 10000;
+            const int timeoutMilliseconds = 120_000;
             const int pollInterval = 500;
             int waited = 0;
 

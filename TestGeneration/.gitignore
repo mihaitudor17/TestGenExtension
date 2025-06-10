@@ -4,6 +4,7 @@ packages/
 riderModule.iml
 _ReSharper.Caches/
 TestGen/model-server/dist/
+TestGen/model-server/mac-os/
 TestGen/model-server/build/
 TestGen/model-server/best_model/
 .vs/
