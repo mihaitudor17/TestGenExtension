@@ -9,3 +9,5 @@ TestGen/model-server/build/
 TestGen/model-server/best_model/
 .vs/
 *.vsidx
+ModelTraining/model_output/
+ModelTraining/best_model/
