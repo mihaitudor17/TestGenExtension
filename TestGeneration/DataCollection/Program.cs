@@ -8,7 +8,7 @@ class Program
     const int TargetCount = 100_000;
     const int MaxRepos = 1000;
     const string OutputFile = "step_definitions.json";
-    const string Token = "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";
+    const string Token = < YOUR_TOKEN >;
 
     static async Task Main(string[] args)
     {
